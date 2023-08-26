@@ -1,3 +1,4 @@
+import { StatisticsText } from './Statistics.style';
 export const Statistics = ({
   good,
   neutral,
@@ -6,10 +7,10 @@ export const Statistics = ({
   positivePercentage,
 }) => (
   <div>
-    <p>Good: {good}</p>
-    <p>Neutral: {neutral}</p>
-    <p>Bad: {bad}</p>
-    <p>Total: {total}</p>
-    <p>Positive feedback: {positivePercentage}%</p>
+    <StatisticsText>Good: {good}</StatisticsText>
+    <StatisticsText>Neutral: {neutral}</StatisticsText>
+    <StatisticsText>Bad: {bad}</StatisticsText>
+    <StatisticsText>Total: {total}</StatisticsText>
+    <StatisticsText>Positive feedback: {positivePercentage}%</StatisticsText>
   </div>
 );
